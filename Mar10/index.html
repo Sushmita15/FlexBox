@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mario Day!</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+</head>
+<body style="padding-top: 20%;">
+
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+    <p id="outputPlace" style="text-align: center; font-size: 2em;">0</p>
+    
+    <a href="lab6-form.html">Siena Banner</a>
+</body>
+<script>
+
+ /*
+    for (var i = 0; i < 5; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, i * 1000);
+}
+
+function hello(){
+    console.log("Hello from the other side...")
+}
+setInterval(hello, 1000);
+*/
+let count = 0; 
+let intervalId;
+
+function stopWatch(){
+    count++;
+    document.getElementById("outputPlace").textContent = count;
+}
+
+document.getElementById("start").addEventListener("click", () => {
+    console.log("start clicked");
+    intervalId = setInterval(stopWatch, 1000);
+
+});
+
+document.getElementById("stop").addEventListener("click", ()=> {
+    console.log("stop clicked");
+    clearInterval(intervalId);
+    count = 0;
+});
+
+
+
+</script>
+</html>

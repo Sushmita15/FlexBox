@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annua Income</title>
+</head>
+<body>
+    <h1> Annual Income </h1>
+    <form method="post" action="">
+        <label for="income"> Income Source Name: </label>
+        <input type = text id = "income" name = "income" required minlength="3">
+       
+    </br><label for="amount"> Amount: </label>
+        <input type="number" id = "amount" name = "amount" required minlength="0.01" step="">
+       
+    </br><label for="frequency"> Frequency: </label>
+        <select name = "frequency" id="frequency" required>
+            <option value="weekly" > Weekly </option>
+            <option value="biweekly"> Biweekly </option>
+            <option value="monthly"> Monthly </option>
+            <option value="yearly"> Yearly </option>
+
+        </select>
+       
+    </br><input type = "submit" value = "Submit">
+    </form>
+    
+    </body>
+</html>

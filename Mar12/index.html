@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+            .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            gap: 4px;
+        }
+
+        .wrapper div {
+            width: 80px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+    </style>
+    <div class="wrapper">
+
+    </div>
+    <script>
+
+        const button = document.querySelector(".wrapper");
+
+
+        function createBox(){
+            const box = document.querySelector(".wrapper");
+            for(let i = 1; i <= 1000; i++){
+                const div = document.createElement("div");
+                div.textContent("i");
+                document.appendChild(div);
+            }
+        }
+                button.addEventListener("click", createBox);
+
+
+    </script>
+</body>
+</html>

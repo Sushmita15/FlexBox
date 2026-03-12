@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .site-nav{
+        background-color: rgb(66, 68, 68);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: space-between;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .logo{
+        font-size: 24px;
+        align-content: center;
+        color: white;
+    }
+
+    a{
+        color: white;
+        text-decoration: none; 
+    }
+
+    li{
+        list-style: none;
+        padding: 20px;
+    }
+
+    li:hover{
+        background-color: rgb(217, 118, 171);
+        transition: background-color 0.3s ease;
+
+    }
+
+  ul{
+    display: flex; 
+  }
+
+  /*Media Queries for responsiveness*/
+
+  @media (max-width: 600px){
+    
+
+  }
+
+</style>
+
+
+    <header>
+<nav class="site-nav">
+<div class="logo">MySite</div>
+<ul class="nav-links">
+<li><a href="flex.html">Flex</a></li>
+<li><a href="layout.html">Layout</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+    </header>
+</body>
+</html>
