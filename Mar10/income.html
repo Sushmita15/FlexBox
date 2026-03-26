@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annua Income</title>
+    <title>Annual Income</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body><main class="mb-3" style="padding: 20px;">
     <h1> Annual Income </h1>
     <form method="post" action="">
-        <label for="income"> Income Source Name: </label>
-        <input type = text id = "income" name = "income" required minlength="3">
-       
-    </br><label for="amount"> Amount: </label>
-        <input type="number" id = "amount" name = "amount" required minlength="0.01" step="">
-       
-    </br><label for="frequency"> Frequency: </label>
-        <select name = "frequency" id="frequency" required>
+        <div class="mb-3">
+        <label for="income" class="form-label"> Income Source Name: </label>
+        <input type = text class="form-control" id = "income" name = "income" required minlength="3">
+    </div>
+
+  
+    <div class="mb-3">
+    <label for="amount" class="form-label"> Amount: </label>
+        <input type="number" class="form-control" id = "amount" name = "amount" required min="0.01" step="0.01">
+       </div>
+
+    <div class="mb-3">
+    <label for="frequency" class="form-label"> Frequency: </label>
+        <select name = "frequency" class="form-control" id="frequency" required>
             <option value="weekly" > Weekly </option>
             <option value="biweekly"> Biweekly </option>
             <option value="monthly"> Monthly </option>
             <option value="yearly"> Yearly </option>
 
         </select>
-       
-    </br><input type = "submit" value = "Submit">
+        
+    </div>       
+    <input type = "submit" value = "Submit" class="btn btn-primary">
     </form>
-    
+    </main>
     </body>
 </html>
